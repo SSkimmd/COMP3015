@@ -15,8 +15,15 @@ Open the visual studio solution and select build. include and lib folder should 
 - Dear ImGui
 
 # Gameplay Examples
-In Application
-![In Application](screenshots/application.png)
+Skybox
+![Skybox](screenshots/skybox.png)
+
+Spider Example:
+![spider](screenshots/spider.png)
+
+Backpack and Spider Example:
+![spider](screenshots/both.png)
+
 
 # Renderer Changes
 The renderer for the project has been modified to allow the object to determine how it is going to be rendered in the scene.
