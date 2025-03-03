@@ -22,12 +22,14 @@ void Game::Start() {
 
     GameObject* spider = new GameObject();
     Shader spiderShader = Shader("shaders/normals/normals.vs", "shaders/normals/normals.fs");
-    spider->CreateWithModel("models/backpack/backpack.obj", spiderShader, true);
+    spider->CreateWithModel("models/spider/Only_Spider_with_Animations_Export.obj", spiderShader, false);
     //player->AddComponent(new Rotate(player));
-    //spider->SetScale(glm::vec3(0.001f, 0.001f, 0.001f));
+    spider->SetScale(glm::vec3(0.01f, 0.01f, 0.01f));
     spider->SetName("backpack_normals");
-    spider->SetPosition(glm::vec3(-2.0f, 0.0f, -3.0f));
+    spider->SetPosition(glm::vec3(0.0f, 0.0f, -200.0f));
+    spider->AddComponent(new Rotate(spider));
     SceneManager::get().AddObjectToScene(spider);
+    spider->SetHidden(true);
 
     std::vector<std::string> faces
     {
