@@ -1,2 +1,42 @@
-﻿  game.cpp
-  COMP3016 VS22.vcxproj -> C:\Users\jimmy\Desktop\COMP3015\x64\Debug\COMP3016 VS22.exe
+﻿  application.cpp
+  game.cpp
+  player.hpp
+  input.cpp
+  interface.cpp
+  main.cpp
+  object.cpp
+  renderer.cpp
+  scene.cpp
+  Generating Code...
+  glad.c
+  stb.c
+  Generating Code...
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4217: symbol 'glfwGetError' defined in 'glfw3.lib(init.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"bool __cdecl ImGui_ImplGlfw_Init(struct GLFWwindow *,bool,enum GlfwClientApi)" (?ImGui_ImplGlfw_Init@@YA_NPEAUGLFWwindow@@_NW4GlfwClientApi@@@Z)'
+LINK : warning LNK4217: symbol 'glfwSetErrorCallback' defined in 'glfw3.lib(init.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"bool __cdecl ImGui_ImplGlfw_Init(struct GLFWwindow *,bool,enum GlfwClientApi)" (?ImGui_ImplGlfw_Init@@YA_NPEAUGLFWwindow@@_NW4GlfwClientApi@@@Z)'
+LINK : warning LNK4217: symbol 'glfwSetMonitorCallback' defined in 'glfw3.lib(monitor.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"bool __cdecl ImGui_ImplGlfw_Init(struct GLFWwindow *,bool,enum GlfwClientApi)" (?ImGui_ImplGlfw_Init@@YA_NPEAUGLFWwindow@@_NW4GlfwClientApi@@@Z)'
+LINK : warning LNK4217: symbol 'glfwGetWindowSize' defined in 'glfw3.lib(window.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"void __cdecl ImGui_ImplGlfw_NewFrame(void)" (?ImGui_ImplGlfw_NewFrame@@YAXXZ)'
+LINK : warning LNK4217: symbol 'glfwGetFramebufferSize' defined in 'glfw3.lib(window.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"void __cdecl ImGui_ImplGlfw_NewFrame(void)" (?ImGui_ImplGlfw_NewFrame@@YAXXZ)'
+LINK : warning LNK4217: symbol 'glfwGetWindowAttrib' defined in 'glfw3.lib(window.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"void __cdecl ImGui_ImplGlfw_NewFrame(void)" (?ImGui_ImplGlfw_NewFrame@@YAXXZ)'
+LINK : warning LNK4217: symbol 'glfwSetWindowFocusCallback' defined in 'glfw3.lib(window.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"bool __cdecl ImGui_ImplGlfw_Init(struct GLFWwindow *,bool,enum GlfwClientApi)" (?ImGui_ImplGlfw_Init@@YA_NPEAUGLFWwindow@@_NW4GlfwClientApi@@@Z)'
+LINK : warning LNK4217: symbol 'glfwGetInputMode' defined in 'glfw3.lib(input.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"void __cdecl ImGui_ImplGlfw_NewFrame(void)" (?ImGui_ImplGlfw_NewFrame@@YAXXZ)'
+LINK : warning LNK4217: symbol 'glfwSetInputMode' defined in 'glfw3.lib(input.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"void __cdecl ImGui_ImplGlfw_NewFrame(void)" (?ImGui_ImplGlfw_NewFrame@@YAXXZ)'
+LINK : warning LNK4217: symbol 'glfwGetKeyName' defined in 'glfw3.lib(input.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"void __cdecl ImGui_ImplGlfw_KeyCallback(struct GLFWwindow *,int,int,int,int)" (?ImGui_ImplGlfw_KeyCallback@@YAXPEAUGLFWwindow@@HHHH@Z)'
+LINK : warning LNK4217: symbol 'glfwGetKey' defined in 'glfw3.lib(input.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"void __cdecl ImGui_ImplGlfw_UpdateKeyModifiers(struct GLFWwindow *)" (?ImGui_ImplGlfw_UpdateKeyModifiers@@YAXPEAUGLFWwindow@@@Z)'
+LINK : warning LNK4217: symbol 'glfwGetCursorPos' defined in 'glfw3.lib(input.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"void __cdecl ImGui_ImplGlfw_NewFrame(void)" (?ImGui_ImplGlfw_NewFrame@@YAXXZ)'
+LINK : warning LNK4217: symbol 'glfwSetCursorPos' defined in 'glfw3.lib(input.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"void __cdecl ImGui_ImplGlfw_NewFrame(void)" (?ImGui_ImplGlfw_NewFrame@@YAXXZ)'
+LINK : warning LNK4217: symbol 'glfwCreateStandardCursor' defined in 'glfw3.lib(input.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"bool __cdecl ImGui_ImplGlfw_Init(struct GLFWwindow *,bool,enum GlfwClientApi)" (?ImGui_ImplGlfw_Init@@YA_NPEAUGLFWwindow@@_NW4GlfwClientApi@@@Z)'
+LINK : warning LNK4217: symbol 'glfwDestroyCursor' defined in 'glfw3.lib(input.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"void __cdecl ImGui_ImplGlfw_Shutdown(void)" (?ImGui_ImplGlfw_Shutdown@@YAXXZ)'
+LINK : warning LNK4217: symbol 'glfwSetCursor' defined in 'glfw3.lib(input.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"void __cdecl ImGui_ImplGlfw_NewFrame(void)" (?ImGui_ImplGlfw_NewFrame@@YAXXZ)'
+LINK : warning LNK4217: symbol 'glfwSetKeyCallback' defined in 'glfw3.lib(input.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"bool __cdecl ImGui_ImplGlfw_Init(struct GLFWwindow *,bool,enum GlfwClientApi)" (?ImGui_ImplGlfw_Init@@YA_NPEAUGLFWwindow@@_NW4GlfwClientApi@@@Z)'
+LINK : warning LNK4217: symbol 'glfwSetCharCallback' defined in 'glfw3.lib(input.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"bool __cdecl ImGui_ImplGlfw_Init(struct GLFWwindow *,bool,enum GlfwClientApi)" (?ImGui_ImplGlfw_Init@@YA_NPEAUGLFWwindow@@_NW4GlfwClientApi@@@Z)'
+LINK : warning LNK4217: symbol 'glfwSetMouseButtonCallback' defined in 'glfw3.lib(input.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"bool __cdecl ImGui_ImplGlfw_Init(struct GLFWwindow *,bool,enum GlfwClientApi)" (?ImGui_ImplGlfw_Init@@YA_NPEAUGLFWwindow@@_NW4GlfwClientApi@@@Z)'
+LINK : warning LNK4217: symbol 'glfwSetCursorPosCallback' defined in 'glfw3.lib(input.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"bool __cdecl ImGui_ImplGlfw_Init(struct GLFWwindow *,bool,enum GlfwClientApi)" (?ImGui_ImplGlfw_Init@@YA_NPEAUGLFWwindow@@_NW4GlfwClientApi@@@Z)'
+LINK : warning LNK4217: symbol 'glfwSetCursorEnterCallback' defined in 'glfw3.lib(input.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"bool __cdecl ImGui_ImplGlfw_Init(struct GLFWwindow *,bool,enum GlfwClientApi)" (?ImGui_ImplGlfw_Init@@YA_NPEAUGLFWwindow@@_NW4GlfwClientApi@@@Z)'
+LINK : warning LNK4217: symbol 'glfwSetScrollCallback' defined in 'glfw3.lib(input.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"bool __cdecl ImGui_ImplGlfw_Init(struct GLFWwindow *,bool,enum GlfwClientApi)" (?ImGui_ImplGlfw_Init@@YA_NPEAUGLFWwindow@@_NW4GlfwClientApi@@@Z)'
+LINK : warning LNK4217: symbol 'glfwGetGamepadState' defined in 'glfw3.lib(input.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"void __cdecl ImGui_ImplGlfw_UpdateGamepads(void)" (?ImGui_ImplGlfw_UpdateGamepads@@YAXXZ)'
+LINK : warning LNK4217: symbol 'glfwSetClipboardString' defined in 'glfw3.lib(input.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"private: static __cdecl <lambda_ed6c2da74aebab163c724485f58a8085>::<lambda_invoker_cdecl>(struct ImGuiContext *,char const *)" (?<lambda_invoker_cdecl>@<lambda_ed6c2da74aebab163c724485f58a8085>@@CA@PEAUImGuiContext@@PEBD@Z)'
+LINK : warning LNK4217: symbol 'glfwGetClipboardString' defined in 'glfw3.lib(input.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"private: static __cdecl <lambda_314682a9ebe5acb83d78d40103399a35>::<lambda_invoker_cdecl>(struct ImGuiContext *)" (?<lambda_invoker_cdecl>@<lambda_314682a9ebe5acb83d78d40103399a35>@@CA@PEAUImGuiContext@@@Z)'
+LINK : warning LNK4217: symbol 'glfwGetTime' defined in 'glfw3.lib(input.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"void __cdecl ImGui_ImplGlfw_NewFrame(void)" (?ImGui_ImplGlfw_NewFrame@@YAXXZ)'
+LINK : warning LNK4217: symbol 'glfwGetWin32Window' defined in 'glfw3.lib(win32_window.obj)' is imported by 'imgui.lib(imgui_impl_glfw.cpp.obj)' in function '"bool __cdecl ImGui_ImplGlfw_Init(struct GLFWwindow *,bool,enum GlfwClientApi)" (?ImGui_ImplGlfw_Init@@YA_NPEAUGLFWwindow@@_NW4GlfwClientApi@@@Z)'
+  COMP3016 VS22.vcxproj -> C:\Users\jimmy\Desktop\COMP3015CW1\COMP3015\x64\Debug\COMP3016 VS22.exe
