@@ -43,7 +43,9 @@ An example skybox has been includes with the application and can be enabled or d
 
 
 # Example Usage
-
+When creating an object in the scene, you will be given the option to create a base object or an object with a texture. The texture object is just a base cube. 
+On the other hand, when calling the CreateWithModel() function, an object will be loaded and assigned at runtime to the object.
+This is also where you can pass in the shader to be displayed through the model. All of which can be found the /shaders folder.
 
 
 
