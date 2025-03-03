@@ -16,7 +16,7 @@ class GameObject {
 public:
     GameObject(std::string textureFile);
     GameObject(std::vector<std::string> faces);
-    GameObject* CreateWithModel(std::string modelFile, Shader shader);
+    GameObject* CreateWithModel(std::string modelFile, Shader shader, bool isFlipped);
 
     GameObject() = default;
     ~GameObject() = default;
@@ -125,6 +125,10 @@ public:
 
     std::string GetType() {
         return this->type;
+    }
+
+    Shader GetShader() {
+        return shader;
     }
 private:
     std::vector<Component*> components;

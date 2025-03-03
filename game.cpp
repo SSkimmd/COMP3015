@@ -11,20 +11,23 @@ Game::~Game() {
 
 void Game::Start() {    
     GameObject* player = new GameObject();
-    Shader shader = Shader("shaders/normals/normals.vs", "shaders/normals/normals.fs");
-    player->CreateWithModel("models/backpack/backpack.obj", shader);
+    Shader shader = Shader("shaders/models/model.vs", "shaders/models/model.fs");
+    player->CreateWithModel("models/backpack/backpack.obj", shader, true);
     player->AddComponent(new Player());
+    //player->AddComponent(new Rotate(player));
+    
     player->SetName("player");
-    player->SetPosition(glm::vec3(0.0f, 0.0f, -3.0f));
+    player->SetPosition(glm::vec3(2.0f, 0.0f, -3.0f));
     SceneManager::get().AddObjectToScene(player);
 
-
-    //GameObject* cube = new GameObject("textures/test_two.jpg");
-    //cube->AddComponent(new Rotate(cube));
-    //cube->AddComponent(new Move(cube));
-    //cube->SetName("cube");
-    //SceneManager::get().AddObjectToScene(cube);
-
+    GameObject* spider = new GameObject();
+    Shader spiderShader = Shader("shaders/normals/normals.vs", "shaders/normals/normals.fs");
+    spider->CreateWithModel("models/backpack/backpack.obj", spiderShader, true);
+    //player->AddComponent(new Rotate(player));
+    //spider->SetScale(glm::vec3(0.001f, 0.001f, 0.001f));
+    spider->SetName("backpack_normals");
+    spider->SetPosition(glm::vec3(-2.0f, 0.0f, -3.0f));
+    SceneManager::get().AddObjectToScene(spider);
 
     std::vector<std::string> faces
     {

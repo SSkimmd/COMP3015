@@ -30,9 +30,6 @@
     <ClCompile Include="object.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="renderer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="scene.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -52,6 +49,9 @@
       <Filter>Header Files\ecs\components</Filter>
     </ClCompile>
     <ClCompile Include="game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

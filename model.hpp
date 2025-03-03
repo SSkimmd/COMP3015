@@ -26,19 +26,16 @@ public:
     vector<Mesh>    meshes;
     string directory;
     bool gammaCorrection;
+    bool isFlipped;
 
     Model() = default;
     // constructor, expects a filepath to a 3D model.
-    Model(string const& path, bool gamma = false) : gammaCorrection(gamma)
+    Model(string const& path, bool gamma = false, bool isFlipped = false) : gammaCorrection(gamma)
     {
+        this->isFlipped = isFlipped;
+        std::cout << isFlipped << " Flipped" << std::endl;
         loadModel(path);
-    }
 
-    // draws the model, and thus all its meshes
-    void Draw(Shader& shader)
-    {
-        for (unsigned int i = 0; i < meshes.size(); i++)
-            meshes[i].Draw(shader);
     }
 
 private:
@@ -205,7 +202,8 @@ private:
         glGenTextures(1, &textureID);
 
         int width, height, nrComponents;
-        stbi_set_flip_vertically_on_load(true);
+
+        stbi_set_flip_vertically_on_load(isFlipped);
         unsigned char* data = stbi_load(filename.c_str(), &width, &height, &nrComponents, 0);
         if (data)
         {

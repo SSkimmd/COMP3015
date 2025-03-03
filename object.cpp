@@ -18,11 +18,12 @@ GameObject::GameObject(std::vector<std::string> faces) {
     LoadCubemap(faces);
 }
 
-GameObject* GameObject::CreateWithModel(std::string modelFile, Shader shader) {
+GameObject* GameObject::CreateWithModel(std::string modelFile, Shader shader, bool isFlipped) {
     SetType("model");
     this->shader = shader;
+    this->model = Model(modelFile, false, isFlipped);
+    std::cout << this->model.textures_loaded.size() << std::endl;
 
-    model = Model(modelFile);
     return this;
 }
 
@@ -249,6 +250,8 @@ void GameObject::Render() {
     shaderModel = glm::rotate(shaderModel, rotation.y, glm::vec3(0.0f, 1.0f, 0.0f));
     shader.setMat4("model", shaderModel);
 
-    model.Draw(shader);
+    for (unsigned int i = 0; i < this->model.meshes.size(); i++)
+        this->model.meshes[i].Draw(shader);
+
     return;
 }
